@@ -48,3 +48,6 @@ getUserData(1, (user) => {
         });
     });
 });
+
+// How to Solve Callback Hell?
+// Modern JavaScript provides better ways to handle asynchronous operations, such as Promises and Async/Await.
