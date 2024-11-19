@@ -17,7 +17,7 @@ Rejected: The operation failed, and the promise has a reason (error).
 */
 
 
-// Creating a Promise
+//********************************************************  Creating a Promise **********************************************************/
 const promise = new Promise((resolve, reject) => {
     // Perform asynchronous operation
     // If successful, resolve the promise
@@ -32,7 +32,7 @@ const promise = new Promise((resolve, reject) => {
     }
 });
 
-// Using a Promise
+// *******************************************************  Using a Promise ********************************************************/
 promise
     .then((result) => {
         // Handle success (Runs if promise is resolved)
@@ -43,8 +43,7 @@ promise
         console.error(error); // Output: "Operation failed"
     });
 
-// Detailed Example with Promises
-// Here’s the earlier example of fetching user data, orders, and order details, rewritten using Promises:
+//************************************************ Detailed Example with Promises  ****************************************************/
 
 // Functions returning Promises
 const getUserData = (userId) => {
@@ -101,7 +100,7 @@ getUserData(1)
 // Order Details: { orderId: 'order1', product: 'Laptop', price: 1200 }  
 
 
-// Running multiple promises
+//***************************************** Running multiple promises at once *************************************/
 
 // Use the Promise.all method to run multiple promises at once.
 // Promise.all accepts an array of promises and resolves when all of them are resolved
